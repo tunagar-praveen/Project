@@ -1,0 +1,30 @@
+package com.nt.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.nt.model.Employee;
+import com.nt.service.EmployeeServiceImpl;
+
+@RestController
+@RequestMapping("/employeeController")
+public class EmployeeController {
+	
+	@Autowired
+	EmployeeServiceImpl ser;
+	
+	@GetMapping("/home")
+	public String home() {
+    	return "hello bro";
+		
+	}
+	
+    @GetMapping("/register")
+	public String registerEmployee(@RequestBody Employee emp) {
+    	return ser.regiserEmployee(emp);
+		
+	}
+}

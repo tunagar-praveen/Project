@@ -1,0 +1,18 @@
+package com.nt.model;
+
+@Entity
+@Table(name="emp")
+public class Employee {
+	
+	private Integer id;
+	
+	private String name;
+	
+	private String email_Id;
+	
+	private String city;
+	
+	private String dept;
+	
+
+}

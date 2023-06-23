@@ -1,0 +1,11 @@
+package com.nt.service;
+
+import java.util.Iterator;
+
+import com.nt.model.Employee;
+
+public interface IEmployeeService {
+
+	public String regiserEmployee(Iterator<Employee> emp);
+
+}

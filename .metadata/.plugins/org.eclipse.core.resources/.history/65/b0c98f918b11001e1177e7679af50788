@@ -1,0 +1,7 @@
+package com.nt.model;
+
+public class Person {
+    private String name;
+    private String city;
+    private String state;
+}

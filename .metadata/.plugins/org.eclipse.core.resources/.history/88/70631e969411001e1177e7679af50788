@@ -1,0 +1,9 @@
+package com.nt.model;
+
+public class Address {
+	private String city;
+	private String state;
+	private String street;
+	private int pincode;
+
+}
